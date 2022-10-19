@@ -1,0 +1,26 @@
+/*
+Theme Name: Cell & Tech
+Theme URI: https://cellytech.net
+Author: Leopoldo Lira
+Author URI: https://liraleopoldo.com
+Description: System template for cell & tech nicaragua
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: cyt
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import "CSS/fonts.css";
+@import "CSS/index-grid-styles.css";
+@import "CSS/normalize.css";
+@import "CSS/styles-contactus.css";
+@import "CSS/styles-footer.css";
+@import "CSS/styles-navbar.css";
+@import "CSS/styles-portfolio.css";
+@import "CSS/styles-products.css";
+@import "CSS/styles-services.css";
+@import "CSS/styles.css";

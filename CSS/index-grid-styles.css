@@ -1,0 +1,110 @@
+
+.container-swiper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.swiper-main-one{
+    width:50vw;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.text-one{
+    width: 49vw;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.swiper-main-two{
+    width: 49vw;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-two{
+    width: 50vw;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 1.5em;
+    text-align: center;
+}
+
+.text-one, .text-two{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.text-one,
+.text-two p{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+.swiper{
+    width: 50vw;
+    height: 100%;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height:100%;
+}
+@media (max-width: 991px){
+    .container-swiper{
+        display: flex;
+        flex-direction: column; 
+        gap: 10vw;
+    }
+    .swiper-main-one,
+    .text-one,
+    .swiper-main-two,
+    .text-two {
+        width: 100vw;
+    }
+
+    .text-one, .text-two{
+        height: 75vh;
+    }
+
+    .swiper{
+        width: 100vw;
+    }
+    .container-swiper .text-one{
+        order: 1;
+    }
+
+    .container-swiper .swiper-main-one{
+        order: 2;
+    }
+
+    .container-swiper .text-two{
+        order: 3;
+    }
+
+    .container-swiper .swiper-main-two{
+        order: 4;
+    }
+    
+}

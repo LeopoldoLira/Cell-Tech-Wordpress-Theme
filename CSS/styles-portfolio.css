@@ -1,0 +1,107 @@
+body{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.vid-container{
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+video{
+  width: 100%;    
+}
+
+.vid-text-container{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rep-h1{
+  font-size: 80px;
+  font-weight: 900;
+  z-index: 4;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.rep-h1::after{
+  display: block;
+  width: 100%;
+  height: 10px;
+  content: "";
+  margin: auto;
+  background-color: #fff;
+}
+
+.overlay{
+width: 100%;
+height: 100%;
+position: absolute;
+background: rgba(0, 0, 0, 0.3);
+
+
+}
+
+@media screen and (max-width: 800px){
+  .rep-h1{
+      font-size: 50px;
+  }
+}
+@media screen and (max-width: 500px){
+  .rep-h1{
+      font-size: 30px;
+      margin-bottom: 0;
+  }
+}
+
+
+
+.catalogue{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+
+/*slider styles*/
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items: center;
+}
+img{
+width: 600px;
+height:600px;
+}
+
+@media only screen and (min-width:100px) and (max-width:500px){
+img{
+width: 200px;
+height:200px;
+ }
+}
